@@ -1114,23 +1114,29 @@ footer {
 
     }
 }
-@media (max-width: 780px) and (orientation: landscape) { 
+
+@media (max-width: 780px) and (orientation: landscape) {
     .border_date_1 {
         margin: 0px -40px 0px 0px;
     }
+
     .border_date_2 {
         margin: 0px -50px 0px 0px;
     }
+
     .title_date_2 {
         max-width: 160px;
     }
+
     .title_date_3 {
         max-width: 220px;
     }
+
     .title_date_3 h2 {
-        padding-right:0px;
+        padding-right: 0px;
     }
- }
+}
+
 @media(max-width: 768px) {
     .title_curso h2 {
         font-size: 18px;
@@ -1246,10 +1252,12 @@ footer {
     .container_turma_int {
         gap: 20px;
     }
+
     .area_info_curso {
         display: flex;
         justify-content: center;
     }
+
     .area_info_curso_int {
         justify-content: space-around;
         gap: 30px;
@@ -1270,8 +1278,13 @@ footer {
     .title_icon_curso h2 {
         font-size: 14px;
     }
+
     .sub_title_icon_curso p {
         font-size: 14px;
+    }
+
+    .area_texts_conteudo {
+        gap: 20px;
     }
 
     .title_conteudo h2 {
