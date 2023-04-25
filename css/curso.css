@@ -1232,11 +1232,15 @@ footer {
     }
 
     .area_info_curso_int {
-        flex-direction: column;
-        align-items: center;
+        justify-content: space-evenly;
         gap: 20px;
+        align-items: flex-start;
+        padding: 0px 40px 0px 40px;
     }
 
+    .area_icon_curso {
+        gap: 20px;
+    }
 
     .title_conteudo h2 {
         font-size: 24px;
