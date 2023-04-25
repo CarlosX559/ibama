@@ -1246,14 +1246,26 @@ footer {
     }
 
     .area_info_curso_int {
-        justify-content: space-evenly;
-        gap: 20px;
-        align-items: flex-start;
-        padding: 0px 40px 0px 40px;
+        justify-content: space-around;
+        gap: 30px;
+        align-items: center;
+        padding: 0px 60px 0px 60px;
     }
 
     .area_icon_curso {
-        gap: 20px;
+        gap: 10px;
+        height: 72px;
+    }
+
+    .loop {
+        width: 46px;
+    }
+
+    .title_icon_curso h2 {
+        font-size: 14px;
+    }
+    .sub_title_icon_curso p {
+        font-size: 14px;
     }
 
     .title_conteudo h2 {
