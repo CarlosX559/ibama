@@ -614,7 +614,7 @@ nav ul li {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 100px 0px 100px 0px;
+    padding: 60px 0px 60px 0px;
 }
 
 .container_relacionados_int {
@@ -737,7 +737,7 @@ nav ul li {
     display: flex;
     gap: 20px;
     flex-direction: column;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .title_faq h2 {
@@ -825,9 +825,8 @@ nav ul li {
     transform: scaleY(1);
 }
 
-
 footer {
-    padding: 80px 0px 0px 0px;
+    padding: 60px 0px 0px 0px;
 }
 
 .container_footer {
@@ -1112,7 +1111,7 @@ footer {
     .footer_col_1 {
         align-items: center;
         max-width: 470px;
-        
+
     }
 }
 
@@ -1153,6 +1152,7 @@ footer {
     .area_info_curso_int {
         justify-content: center;
     }
+
     .area_inscricao_int {
         max-width: 670px;
     }
@@ -1173,7 +1173,7 @@ footer {
     .title_logo h2 {
         font-size: 12px;
     }
-    
+
     .area_logo {
         gap: 10px;
     }
@@ -1181,9 +1181,11 @@ footer {
     .area_container_1 {
         padding: 40px 20px 0px 20px;
     }
+
     .area_matricule_se {
         padding: 0px 20px;
     }
+
     .area_matricula {
         height: 400px;
     }
@@ -1212,12 +1214,15 @@ footer {
     .title_date_3 h2 {
         font-size: 14px;
     }
+
     .border_date_2 {
         margin-left: 32px;
     }
+
     .border_date_1 {
         margin-left: 20px;
     }
+
     .container_turma {
         margin-top: 20px;
     }
@@ -1282,9 +1287,11 @@ footer {
     footer {
         padding: 40px 0px 0px 0px;
     }
+
     .footer_col_2_total {
         gap: 40px;
     }
+
     .footer_col_1 {
         max-width: 340px;
         flex-direction: column;
@@ -1296,10 +1303,12 @@ footer {
         align-items: center;
         gap: 10px;
     }
+
     .border_footer {
         border: 1px solid #FFFFFF;
         width: 100%;
     }
+
     .area_redes {
         align-items: center;
         gap: 30px;
