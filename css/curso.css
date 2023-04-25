@@ -1209,11 +1209,11 @@ footer {
     }
 
     .area_matricula {
-        height: 400px;
+        height: 420px;
     }
 
     .area_matricula_int {
-        height: 380px;
+        height: 410px;
     }
 
     .area_inscricao_int {
@@ -1362,5 +1362,16 @@ footer {
         align-items: center;
         gap: 30px;
         padding: 0px 0px 0px 0px;
+    }
+}
+
+@media(max-width: 425px) {
+
+    .area_matricula {
+        height: 400px;
+    }
+
+    .area_matricula_int {
+        height: 380px;
     }
 }
