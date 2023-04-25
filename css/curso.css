@@ -1114,7 +1114,21 @@ footer {
 
     }
 }
-
+@media (max-width: 740px) and (orientation: landscape) { 
+    .border_date_1 {
+        margin: 0px -40px 0px 0px;
+    }
+    .border_date_2 {
+        margin: 0px -40px 0px 0px;
+    }
+    .title_date_2 {
+        max-width: 140px;
+    }
+    .title_date_3 {
+        max-width: 220px;
+    }
+   
+ }
 @media(max-width: 768px) {
     .title_curso h2 {
         font-size: 18px;
