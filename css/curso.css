@@ -1096,15 +1096,19 @@ footer {
         padding: 40px 0px 40px 0px;
     }
 
+    .menu_mobile {
+        padding: 20px 0px 20px 0px;
+    }
+
+    nav ul li {
+        max-width: max-content;
+    }
+
     .menu_mobile nav ul {
         display: flex;
         flex-direction: column;
         width: 100%;
-        gap: 15px;
-    }
-
-    .menu_mobile nav ul li a {
-        font-size: 18px;
+        gap: 12px;
     }
 
     .area_info_curso_int {
