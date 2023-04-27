@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ibama curso</title>
     <link rel="stylesheet" href="css/curso.css">
-
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
 </head>
 
 <body>
@@ -530,68 +531,97 @@
                     </div>
                 </div>
 
-                <div class="area_cards_relacionados">
-                    <div class="card_relacionados">
-                        <div class="img_relacionados">
-                            <img src="img/relacionados_1.png" alt="">
-                        </div>
-
-                        <div class="area_texts_relacionados_2">
-                            <div class="title_info_card">
-                                <h2>
-                                    Comunicação e expressão
-                                </h2>
+                <div class="slide-1 owl-carousel owl-theme area_cards_relacionados">
+                    <div class="item">
+                        <div class="card_relacionados">
+                            <div class="img_relacionados">
+                                <img src="img/relacionados_1.png" alt="">
                             </div>
-                            <div class="border_card"></div>
-                            <div class="sub_title_info_card">
-                                <p>
-                                    Uma comunicação eficaz garante que seu público entenda sua mensagem corretamente.
-                                </p>
+    
+                            <div class="area_texts_relacionados_2">
+                                <div class="title_info_card">
+                                    <h2>
+                                        Comunicação e expressão
+                                    </h2>
+                                </div>
+                                <div class="border_card"></div>
+                                <div class="sub_title_info_card">
+                                    <p>
+                                        Uma comunicação eficaz garante que seu público entenda sua mensagem corretamente.
+                                    </p>
+                                </div>
                             </div>
+    
                         </div>
-
                     </div>
-                    <div class="card_relacionados">
-                        <div class="img_relacionados">
-                            <img src="img/relacionados_2.png" alt="">
-                        </div>
-
-                        <div class="area_texts_relacionados_2">
-                            <div class="title_info_card">
-                                <h2>
-                                    Planejamento e gestão
-                                </h2>
+                    <div class="item">
+                        <div class="card_relacionados">
+                            <div class="img_relacionados">
+                                <img src="img/relacionados_2.png" alt="">
                             </div>
-                            <div class="border_card"></div>
-                            <div class="sub_title_info_card">
-                                <p>
-                                    Aperfeiçoar profissionais de Gestão e Negócios que ocupam posições táticas ou
-                                    estratégicas nas Organizações.
-                                </p>
+    
+                            <div class="area_texts_relacionados_2">
+                                <div class="title_info_card">
+                                    <h2>
+                                        Planejamento e gestão
+                                    </h2>
+                                </div>
+                                <div class="border_card"></div>
+                                <div class="sub_title_info_card">
+                                    <p>
+                                        Aperfeiçoar profissionais de Gestão e Negócios que ocupam posições táticas ou
+                                        estratégicas nas Organizações.
+                                    </p>
+                                </div>
                             </div>
+    
                         </div>
-
                     </div>
-                    <div class="card_relacionados">
-                        <div class="img_relacionados">
-                            <img src="img/relacionados_3.png" alt="">
-                        </div>
-
-                        <div class="area_texts_relacionados_2">
-                            <div class="title_info_card">
-                                <h2>
-                                    Estrategias competitivas
-                                </h2>
+                    <div class="item">
+                        <div class="card_relacionados">
+                            <div class="img_relacionados">
+                                <img src="img/relacionados_3.png" alt="">
                             </div>
-                            <div class="border_card"></div>
-                            <div class="sub_title_info_card">
-                                <p>
-                                    O mundo corporativo exige boas estratégias de negócios.
-                                </p>
+    
+                            <div class="area_texts_relacionados_2">
+                                <div class="title_info_card">
+                                    <h2>
+                                        Estrategias competitivas
+                                    </h2>
+                                </div>
+                                <div class="border_card"></div>
+                                <div class="sub_title_info_card">
+                                    <p>
+                                        O mundo corporativo exige boas estratégias de negócios.
+                                    </p>
+                                </div>
                             </div>
+    
                         </div>
-
                     </div>
+                    <div class="item">
+                        <div class="card_relacionados">
+                            <div class="img_relacionados">
+                                <img src="img/relacionados_3.png" alt="">
+                            </div>
+    
+                            <div class="area_texts_relacionados_2">
+                                <div class="title_info_card">
+                                    <h2>
+                                        Estrategias competitivas
+                                    </h2>
+                                </div>
+                                <div class="border_card"></div>
+                                <div class="sub_title_info_card">
+                                    <p>
+                                        O mundo corporativo exige boas estratégias de negócios.
+                                    </p>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                  
                 </div>
 
             </div>
@@ -1017,10 +1047,50 @@
 
     </footer>
 
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script defer src="js/script.js"></script>
 
+    <script type="text/javascript">
+        const next = '<img src="img/arrow_left.png" alt="">';
+        const prev = '<img src="img/arrow_right.png" alt="">';
+        $(document).ready(() => {
 
+            $(".slide-1").owlCarousel({
 
-    <script src="js/script.js"></script>
+                items: 3,
+                loop: true,
+                nav: true,
+                navText: [
+                    prev,
+                    next
+                ],
+                autoplay: false,
+                autoplayTimeout: 12000,
+                dots: false,
+                responsive: {
+                    375: {
+                        items: 1
+                    },
+                    425: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1024: {
+                        items: 2
+                    },
+                    1440: {
+                        items: 3
+                    }
+                }
+
+            });
+
+        });
+
+    </script>
 </body>
 
 </html>

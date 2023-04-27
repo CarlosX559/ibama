@@ -1,34 +1,8 @@
-function faq() {
-
-    const quest = document.querySelectorAll(".faq_quests");
-    const aswer = document.querySelectorAll(".aswer");
-    const img = document.querySelectorAll(".quest img");
-
-    for (let i = 0; i < quest.length; i++) {
-
-        quest[i].addEventListener("click", () => {
-
-            if (quest[i].classList.contains("close")) {
-                quest[i].classList.toggle("close");
-                aswer[i].classList.toggle("open");
-                img[i].style.transform = "rotate(0deg)";
-            } else {
-                quest[i].classList.add("close");
-                aswer[i].classList.add("open");
-                img[i].style.transform = "rotate(180deg)";
-            }
-        });
-
-    }
-
-
-}
-faq();
 function menu() {
     document.querySelector(".menu_mobile_open").addEventListener( 'click', () => {
 
     let menu_mobile  = document.querySelector('.menu_mobile');
-    menu_mobile.style.display = "flex";
+    menu_mobile.style.display = "-webkit-flex";
     menu_mobile.style.top = "120px";
     menu_mobile.style.animation = "move ease-in 400ms";
      
@@ -59,3 +33,29 @@ function menu() {
 
 }
 menu();
+function faq() {
+
+    const quest = document.querySelectorAll(".faq_quests");
+    const aswer = document.querySelectorAll(".aswer");
+    const img = document.querySelectorAll(".quest img");
+
+    for (let i = 0; i < quest.length; i++) {
+
+        quest[i].addEventListener("click", () => {
+
+            if (quest[i].classList.contains("close")) {
+                quest[i].classList.toggle("close");
+                aswer[i].classList.toggle("open");
+                img[i].style.transform = "rotate(0deg)";
+            } else {
+                quest[i].classList.add("close");
+                aswer[i].classList.add("open");
+                img[i].style.transform = "rotate(180deg)";
+            }
+        });
+
+    }
+
+
+}
+faq();
