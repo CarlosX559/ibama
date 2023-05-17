@@ -81,18 +81,22 @@ header {
 a {
     text-decoration: none;
 }
+
 nav {
     background-color: transparent !important;
     height: max-content !important;
     box-shadow: none !important;
     width: max-content !important;
 }
+
 nav ul a {
     padding: 0px !important;
 }
+
 nav ul a:hover {
     background-color: transparent !important;
 }
+
 nav ul {
     display: flex;
     align-items: center;
@@ -198,11 +202,6 @@ nav ul li:hover {
     width: 100%;
 }
 
-.card_perfil_int a {
-    width: 100%;
-    max-width: 294px;
-}
-
 .card_perfil_int img {
     max-width: 80px;
     width: 100%;
@@ -228,8 +227,7 @@ nav ul li:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    max-width: 294px;
+    width: 294px;
     height: 50px;
     background: #16316F;
     border-radius: 5px;
@@ -586,6 +584,32 @@ nav ul li:hover {
     width: 100%;
 }
 
+.curso_online_destaque {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    max-width: max-content;
+    width: 100%;
+    background: #608476;
+    border-radius: 30px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.curso_online_destaque h2 {
+    font-weight: var(--font-weight-700);
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+.area_img_cursos_online {
+    position: relative;
+}
+
 .area_img_cursos_online img {
     width: 100%;
     max-width: max-content;
@@ -744,7 +768,8 @@ bordered thead tr th {
 
 }
 
-td, th {
+td,
+th {
     padding: 15px 30px !important;
 }
 
@@ -754,7 +779,8 @@ table.striped>tbody>tr>td {
     color: #151515;
 }
 
-table.centered thead tr th, table.centered tbody tr td {
+table.centered thead tr th,
+table.centered tbody tr td {
     text-align: left !important;
 }
 
@@ -810,6 +836,8 @@ table.striped>tbody>tr:nth-child(odd) {
 
 .area_1_fale_conosco {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap: 10px;
     width: 100%;
@@ -820,9 +848,8 @@ table.striped>tbody>tr:nth-child(odd) {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 300px;
+    width: 300px;
     padding: 10px 20px;
-    width: 100%;
     border: 1px solid #16316F;
     border-radius: 8px;
 }
@@ -1120,13 +1147,16 @@ footer {
     nav ul li {
         max-width: max-content;
     }
+
     .menu_mobile nav {
         width: 100% !important;
         padding: 0px 25px;
     }
+
     nav ul {
         align-items: flex-start;
     }
+
     .menu_mobile nav ul {
         display: flex;
         flex-direction: column;
@@ -1134,15 +1164,66 @@ footer {
         gap: 12px;
     }
 
-
-
     /*Container 1*/
     .container_1 {
         padding: 40px 0px 40px 0px;
     }
+
     .area_container_1 {
         flex-direction: column;
         align-items: center;
+    }
+
+    /*Container 2*/
+    .area_container_2 {
+        padding: 40px 0px;
+    }
+
+    .area_pesquisa {
+        max-width: 680px;
+        gap: 20px;
+    }
+
+    .pesquisa {
+        max-width: 600px;
+    }
+
+    .btn_cursos_opcao .select {
+        height: 60px;
+    }
+
+    .btn_cursos_opcao {
+        height: 60px;
+    }
+
+    .title_btn_cursos_opcao.select h2 {
+        font-size: 16px;
+    }
+
+    .title_btn_cursos_opcao h2 {
+        font-size: 16px;
+    }
+
+    .area_btns_cursos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    /*Fale conosco*/
+    .fale_conosco {
+        padding: 50px 20px;
+    }
+
+    .fale_conosco_int {
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .area_horario_fale_conosco {
+        justify-content: center;
     }
 
     /*Jornada*/
@@ -1150,17 +1231,22 @@ footer {
         height: 100%;
         padding: 40px 0px;
     }
+
     .area_jornada_int {
         flex-direction: column;
         gap: 20px;
     }
+
     .area_numeros_jornada {
         justify-content: center;
+        flex-wrap: wrap;
         gap: 10px;
     }
+
     .area_numeros_jornada_int {
         gap: 5px;
     }
+
     .info_numeros_jornada p {
         font-size: 42px;
     }
@@ -1174,9 +1260,11 @@ footer {
         gap: 10px;
         flex-direction: column;
     }
+
     .title_file h2 {
         font-size: 20px;
     }
+
     .area_file img {
         width: 100%;
         max-width: 40px;
@@ -1187,13 +1275,13 @@ footer {
         gap: 20px;
     }
 
-
-    td, th {
+    td,
+    th {
         padding: 15px 15px !important;
     }
 
 
-     /*footer*/
+    /*footer*/
     .area_footer {
         flex-direction: column;
         align-items: center;
@@ -1207,4 +1295,210 @@ footer {
 
     }
 
+}
+
+@media(max-width: 480px) {
+
+    /*Container 1*/
+    header {
+        background-color: #FFFFFF;
+        padding: 10px 10px;
+    }
+
+    .title_logo h2 {
+        font-size: 12px;
+    }
+
+    .area_logo {
+        gap: 10px;
+    }
+
+    .area_container_1 {
+        gap: 20px;
+        padding: 0px 20px 0px 20px;
+    }
+
+    .title_perfil h2 {
+        font-size: 20px;
+    }
+
+    .btn_perfil {
+        width: 200px;
+    }
+
+    .btn_perfil h2 {
+        font-size: 14px;
+    }
+
+    .pesquisa {
+        max-width: 400px;
+        height: 60px !important;
+        padding-left: 40px !important;
+    }
+
+    .title_ranking h2 {
+        font-size: 20px;
+    }
+
+    .card_ranking {
+        height: 300px;
+    }
+
+    .area_ranking {
+        gap: 10px;
+    }
+
+    .card_ranking_int {
+        gap: 20px;
+        padding: 0px 20px;
+        align-items: center;
+    }
+
+    .card_tempo {
+        padding: 20px;
+    }
+
+    .card_tempo_int {
+        display: flex;
+        align-items: center;
+    }
+
+    .area_tempo {
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .numero {
+        font-size: 20px;
+    }
+
+    .nome_ranking h2 {
+        font-size: 14px;
+    }
+
+    .xp_ranking h2 {
+        font-size: 12px;
+    }
+
+    /*Container 2*/
+    .area_texts_cursos_online {
+        padding: 20px 25px 20px 25px;
+    }
+    
+    /*Jornada*/
+
+    .area_numeros_jornada_int {
+        max-width: 80px;
+    }
+
+    .area_container_2 {
+        padding: 20px 0px;
+    }
+
+    .info_numeros_jornada p {
+        font-size: 32px;
+    }
+
+    .area_jornada {
+        padding: 20px 0px;
+    }
+
+    .area_pesquisa {
+        max-width: 100%;
+        gap: 20px;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        padding: 0px 20px;
+    }
+
+    .area_lupa img {
+        position: absolute;
+        top: 30%;
+        left: 30px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .pesquisa::placeholder {
+        font-size: 16px;
+    }
+
+    .enviar {
+        right: 30px;
+        top: 20%;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .title_cursos_pesquisa h2 {
+        font-size: 24px;
+        padding: 0px 20px;
+        text-align: center;
+    }
+
+    /*Certificado*/
+    .area_certificado {
+        gap: 10px;
+    }
+
+    .btn_certificado {
+        padding: 10px 10px;
+    }
+
+    /*Finalizados*/
+    .container_finalizados {
+        padding: 40px 0px 40px 0px;
+    }
+    .info_finalizados p {
+        font-size: 20px;
+    }
+    .title_finalizados h2 {
+        font-size: 24px;
+    }
+
+    /*Faq*/
+    .title_faq h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .fale_conosco {
+        padding: 20px 20px;
+    }
+
+    /*Footer*/
+    footer {
+        padding: 40px 0px 0px 0px;
+    }
+
+    .footer_col_2_total {
+        gap: 40px;
+    }
+
+    .footer_col_1 {
+        max-width: 340px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .area_copy {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .border_footer {
+        border: 1px solid #FFFFFF;
+        width: 100%;
+    }
+
+    .area_redes {
+        align-items: center;
+        gap: 30px;
+        padding: 0px 0px 0px 0px;
+    }
 }
