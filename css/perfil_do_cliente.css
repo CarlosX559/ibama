@@ -571,7 +571,7 @@ nav ul li:hover {
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 6px 9px 18px rgba(0, 0, 0, 0.03);
-    border-radius: 5px;
+    border-radius: 20px;
     max-width: 272px;
     width: 100%;
     padding: 0px 0px 20px 0px;
@@ -948,7 +948,7 @@ footer {
 
 .footer_col_1 {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 20px;
     max-width: 520px;
 }
@@ -981,7 +981,7 @@ footer {
     font-family: 'Lato';
     font-weight: var(--font-weight-400);
     font-size: 16px;
-    color: #333333;
+    color: rgba(30, 30, 30, 0.7);
     margin: 0px;
 }
 
@@ -993,7 +993,7 @@ footer {
     font-family: 'Lato';
     font-weight: var(--font-weight-700);
     font-size: 20px;
-    color: #033C57;
+    color: #980CF7;
     margin: 0px;
 }
 
@@ -1002,14 +1002,14 @@ footer {
     font-weight: var(--font-weight-400);
     font-size: 16px;
     line-height: 19px;
-    color: #333333;
+    color: rgba(30, 30, 30, 0.7);
     margin: 0px;
 }
 
 .copy {
     display: flex;
     justify-content: center;
-    background: #608476;
+    background: #980CF7;
     padding: 20px 0px;
     width: 100%;
     margin-top: 40px;
@@ -1044,15 +1044,6 @@ footer {
     align-items: center;
     gap: 40px;
 }
-
-.title_redes h2 {
-    font-family: 'Lato';
-    font-weight: var(--font-weight-700);
-    font-size: 16px;
-    color: rgba(255, 255, 255, 0.8);
-    margin: 0px;
-}
-
 
 
 @media(max-width: 1024px) {
@@ -1299,6 +1290,49 @@ footer {
 
 @media(max-width: 480px) {
 
+    /*table.responsive-table tbody {
+        display: flex !important;
+        width: 100% !important;
+        position: relative !important;
+        overflow-x: auto !important;
+        white-space: normal !important;
+    }
+
+    table.responsive-table thead tr {
+        display: flex !important;
+        padding: 0px 0px 0px 8px !important;
+        justify-content: space-between !important;
+        width: 95% !important;
+        border: 0 !important;
+    }
+
+    table.responsive-table.bordered th {
+        font-size: 10px;
+    }
+
+    table.striped>tbody>tr>td {
+        font-size: 9px !important;
+    }
+
+    table.responsive-table thead {
+        float: none !important;
+        border: 0 !important;
+        border-right: 0 !important;
+    }
+
+    .oferta {
+        display: none !important;
+    }
+
+    .btn_certificado {
+        display: none;
+    }
+
+    td,
+    th {
+        padding: 10px 0px !important;
+    }*/
+
     /*Container 1*/
     header {
         background-color: #FFFFFF;
@@ -1341,7 +1375,21 @@ footer {
     }
 
     .card_ranking {
-        height: 300px;
+        max-width: 100%;
+        height: max-content;
+        padding: 40px 0px;
+    }
+
+    .card_perfil {
+        max-width: 100%;
+        height: max-content;
+        padding: 40px 0px;
+    }
+
+    .card_tempo {
+        max-width: 100%;
+        height: max-content;
+        padding: 40px 0px;
     }
 
     .area_ranking {
@@ -1352,10 +1400,6 @@ footer {
         gap: 20px;
         padding: 0px 20px;
         align-items: center;
-    }
-
-    .card_tempo {
-        padding: 20px;
     }
 
     .card_tempo_int {
@@ -1384,12 +1428,41 @@ footer {
     /*Container 2*/
     .area_texts_cursos_online {
         padding: 20px 25px 20px 25px;
+        width: 100%;
+        max-width: max-content;
     }
-    
+
+    .card_cursos_online {
+        max-width: 385px;
+    }
+
+    .card_cursos_online_int {
+        align-items: flex-start;
+    }
+
+    .card_cursos_online_int img {
+        width: 100%;
+    }
+
+    .area_info_cursos_online {
+        width: 100%;
+    }
+
+    .btn_info_cursos_online {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .area_img_cursos_online img {
+        height: 300px;
+        width: 385px;
+        max-width: 100%;
+    }
+
     /*Jornada*/
 
     .area_numeros_jornada_int {
-        max-width: 80px;
+        max-width: 70px;
     }
 
     .area_container_2 {
@@ -1400,8 +1473,21 @@ footer {
         font-size: 32px;
     }
 
+    .area_jornada_int {
+        padding: 0px 20px;
+    }
+
+    .info_numeros_jornada p {
+        font-size: 26px;
+    }
+
+    .title_numeros_jornada h2 {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
     .area_jornada {
-        padding: 20px 0px;
+        padding: 40px 0px;
     }
 
     .area_pesquisa {
@@ -1453,9 +1539,15 @@ footer {
     .container_finalizados {
         padding: 40px 0px 40px 0px;
     }
+
+    .container_tabela {
+        padding: 40px 0px;
+    }
+
     .info_finalizados p {
         font-size: 20px;
     }
+
     .title_finalizados h2 {
         font-size: 24px;
     }
@@ -1467,7 +1559,7 @@ footer {
     }
 
     .fale_conosco {
-        padding: 20px 20px;
+        padding: 40px 20px;
     }
 
     /*Footer*/
@@ -1497,6 +1589,7 @@ footer {
     }
 
     .area_redes {
+        justify-content: center;
         align-items: center;
         gap: 30px;
         padding: 0px 0px 0px 0px;
