@@ -584,7 +584,7 @@ nav ul li:hover {
 .title_cursos_pesquisa h2 {
     font-weight: var(--font-weight-700);
     font-size: 26px;
-    color: #151515;
+    color: #1E1E1E;
     margin: 0px;
 }
 
@@ -891,7 +891,7 @@ table.striped>tbody>tr:nth-child(odd) {
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1170px;
 }
 
 .area_faq {
