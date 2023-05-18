@@ -1670,9 +1670,15 @@ footer {
     footer {
         padding: 40px 0px 0px 0px;
     }
-
+    .area_footer {
+        gap: 30px;
+    }
     .footer_col_2_total {
-        gap: 40px;
+        gap: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 345px;
+        width: 100%;
     }
 
     .area_texts_footer {
