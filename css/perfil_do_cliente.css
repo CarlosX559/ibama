@@ -561,23 +561,6 @@ nav ul li:hover {
     border-radius: 10px 10px 0px 0px;
 }
 
-/*
-#area_container_2_total {
-    background-color: #F76818;
-    width: 100%;
-    position: relative;
-    z-index: 1;
-}*/
-
-#area_container_2_total {
-    background-image: url(../img_perfil/bg_cursos.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-
-}
-
 .area_container_2_total {
     display: flex;
     flex-direction: column;
@@ -586,6 +569,7 @@ nav ul li:hover {
     width: 100%;
     position: relative;
     z-index: 1;
+    
 }
 
 .area_pesquisa {
@@ -666,7 +650,7 @@ nav ul li:hover {
     width: 100%;
     flex-wrap: wrap;
     max-width: 1200px;
-    padding: 60px 0px;
+    padding: 40px 0px 0px 0px;
 }
 
 .card_cursos_online {
@@ -797,7 +781,7 @@ nav ul li:hover {
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1170px;
 }
 
 .area_finalizados {
@@ -1690,10 +1674,15 @@ footer {
         gap: 40px;
     }
 
+    .area_texts_footer {
+        align-items: flex-start;
+    }
+
     .footer_col_1 {
         max-width: 340px;
+        align-items: flex-start;
         flex-direction: column;
-        text-align: center;
+        text-align: left;
     }
 
     .area_copy {
