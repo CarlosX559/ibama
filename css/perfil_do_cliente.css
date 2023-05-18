@@ -9,7 +9,8 @@
     --font-weight-400: 400;
     --font-weight-500: 500;
     --font-weight-700: 700;
-
+    --color-principal: #980CF7;
+    --color-secundario: #F76818;
 }
 
 .menu_mobile {
@@ -27,12 +28,12 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-color: #E5EEEB;
+    background: #FFF9EE;
 }
 
 header {
     background-color: #FFFFFF;
-    padding: 10px 40px;
+    padding: 20px 40px;
 }
 
 .container_menu {
@@ -112,7 +113,7 @@ nav ul li {
     font-weight: var(--font-weight-700);
     font-size: 16px;
     line-height: 19px;
-    color: #395A53;
+    color: #1E1E1E;
     max-width: 80px;
 }
 
@@ -120,11 +121,71 @@ nav ul li:hover {
     color: #000000;
 }
 
+.area_btn_menu {
+    position: relative;
+}
+
+.area_drop_down_perfil {
+    position: absolute;
+    display: none;
+    top: 80px;
+    padding: 25px 30px;
+    height: 300px;
+    width: 205px;
+    background: #FFFCF8;
+    border: 1px solid #F9ECD4;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.08);
+    border-radius: 0px 0px 10px 10px;
+}
+
+.area_drop_down_perfil .mobile {
+    position: absolute;
+    display: none;
+    top: 80px;
+    padding: 25px 30px;
+    height: 300px;
+    width: 205px;
+    background: #FFFCF8;
+    border: 1px solid #F9ECD4;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.08);
+    border-radius: 0px 0px 10px 10px; 
+}
+
+.area_drop_down_perfil.open {
+    display: flex;
+}
+
+.area_drop_down_perfil.close {
+    display: none;
+}
+
+.area_drop_down_perfil_int {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.area_drop_down_perfil_int a {
+    font-weight: var(--font-weight-400);
+    font-size: 12px;
+    line-height: 14px;
+    color: #1E1E1E;
+}
+
+.area_drop_down_perfil_int a:hover {
+    color: var(--color-principal);
+}
+
+.color_menu {
+    color: var(--color-principal) !important;
+}
+
 .btn_menu {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #16316F;
+    gap: 5px;
+    background: var(--color-principal);
     max-width: max-content;
     padding: 15px 20px;
     border-radius: 6px;
@@ -136,7 +197,7 @@ nav ul li:hover {
     font-weight: var(--font-weight-700);
     font-size: 14px;
     line-height: 17px;
-    color: #DDD353;
+    color: #FFFFFF;
     margin: 0px;
 }
 
@@ -145,7 +206,8 @@ nav ul li:hover {
 }
 
 .animation_btns:hover {
-    background-color: #16316F;
+    background-color: var(--color-principal);
+    border: 1px solid var(--color-principal);
 }
 
 .animation_btns:hover h2 {
@@ -187,7 +249,7 @@ nav ul li:hover {
     max-width: 373px;
     height: 369px;
     background: #FFFFFF;
-    border: 1px solid #CAE4DC;
+    border: 1px solid #FF9E67;
     box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.06);
     border-radius: 20px;
 }
@@ -229,7 +291,7 @@ nav ul li:hover {
     align-items: center;
     width: 294px;
     height: 50px;
-    background: #16316F;
+    background-color: var(--color-principal);
     border-radius: 5px;
     padding: 15px 0px;
 }
@@ -241,7 +303,6 @@ nav ul li:hover {
     margin: 0px;
 }
 
-
 .card_ranking {
     display: flex;
     justify-content: center;
@@ -250,18 +311,25 @@ nav ul li:hover {
     max-width: 474px;
     height: 369px;
     background: #FFFFFF;
-    border: 1px solid #CAE4DC;
+    border: 1px solid #FF9E67;
     box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.06);
     border-radius: 20px;
 }
 
 .card_ranking_int {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
-    padding: 0px 40px;
+    padding: 30px 40px;
+    height: 100%;
     gap: 25px;
     width: 100%;
+}
+
+.card_ranking_int img {
+    width: 100%;
+    max-width: max-content;
 }
 
 .title_ranking h2 {
@@ -276,6 +344,7 @@ nav ul li:hover {
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    width: 100%;
 }
 
 .area_ranking {
@@ -305,20 +374,20 @@ nav ul li:hover {
 .numero {
     font-weight: var(--font-weight-700);
     font-size: 24px;
-    color: #16316F;
+    color: var(--color-secundario);
 }
 
 .nome_ranking h2 {
     font-weight: var(--font-weight-400);
     font-size: 14px;
-    color: #151515;
+    color: #1E1E1E;
     margin: 0px;
 }
 
 .xp_ranking h2 {
     font-weight: var(--font-weight-700);
     font-size: 15px;
-    color: #16316F;
+    color: var(--color-secundario);
     margin: 0px;
 }
 
@@ -329,7 +398,7 @@ nav ul li:hover {
     max-width: 272px;
     height: 369px;
     background: #FFFFFF;
-    border: 1px solid #CAE4DC;
+    border: 1px solid #FF9E67;
     box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.06);
     border-radius: 20px;
     padding: 40px;
@@ -341,8 +410,14 @@ nav ul li:hover {
 
 .area_tempo {
     display: flex;
+    align-items: flex-start;
     flex-direction: column;
     gap: 30px;
+}
+
+.area_tempo img {
+    max-width: max-content;
+    width: 100%;
 }
 
 .title_tempo h2 {
@@ -364,7 +439,7 @@ nav ul li:hover {
     height: 200px;
     width: 100%;
     background: #FFFFFF;
-    border: 1px solid #CAE4DC;
+    border: 1px solid #FF9E67;
     box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.06);
     border-radius: 20px;
 }
@@ -386,7 +461,7 @@ nav ul li:hover {
 .title_file h2 {
     font-weight: var(--font-weight-700);
     font-size: 22px;
-    color: #395A53;
+    color: #1E1E1E;
     margin: 0px;
 }
 
@@ -418,7 +493,7 @@ nav ul li:hover {
     font-size: 14px;
     line-height: 20px;
     text-align: center;
-    color: #608476;
+    color: #1E1E1E;
     margin: 0px;
 }
 
@@ -428,7 +503,7 @@ nav ul li:hover {
     display: flex;
     justify-content: center;
     width: 100%;
-    background-color: #D8E3DF;
+    background-color: #FFF9EE;
 }
 
 .container_2_int {
@@ -445,7 +520,7 @@ nav ul li:hover {
     gap: 20px;
     width: 100%;
     height: 100%;
-    background-color: #E5EEEB;
+    background-color: #FFF9EE;
 }
 
 .btn_cursos_opcao .select {
@@ -455,8 +530,8 @@ nav ul li:hover {
     height: 90px;
     width: 100%;
     max-width: 380px;
-    background: #16316F;
-    border: 1px solid #D8E3DF;
+    background-color: var(--color-principal);
+    border: 1px solid var(--color-principal);
     border-radius: 10px 10px 0px 0px;
 }
 
@@ -470,7 +545,7 @@ nav ul li:hover {
 .title_btn_cursos_opcao h2 {
     font-weight: var(--font-weight-700);
     font-size: 18px;
-    color: #16316F;
+    color: #1E1E1E;
     margin: 0px;
 }
 
@@ -482,8 +557,35 @@ nav ul li:hover {
     width: 100%;
     max-width: 380px;
     background-color: #FFFFFF;
-    border: 1px solid #D8E3DF;
+    border: 1px solid var(--color-secundario);
     border-radius: 10px 10px 0px 0px;
+}
+
+/*
+#area_container_2_total {
+    background-color: #F76818;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}*/
+
+#area_container_2_total {
+    background-image: url(../img_perfil/bg_cursos.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+}
+
+.area_container_2_total {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    z-index: 1;
 }
 
 .area_pesquisa {
@@ -547,7 +649,7 @@ nav ul li:hover {
     top: 20%;
     width: 100%;
     max-width: max-content;
-    background: #16316F;
+    background-color: var(--color-principal);
     padding: 15px 25px;
     border-radius: 4px;
     font-weight: var(--font-weight-700);
@@ -591,7 +693,7 @@ nav ul li:hover {
     padding: 8px 20px;
     max-width: max-content;
     width: 100%;
-    background: #608476;
+    background-color: #F76818;
     border-radius: 30px;
     position: absolute;
     left: 20px;
@@ -627,7 +729,7 @@ nav ul li:hover {
 .title_cursos_online h2 {
     font-weight: var(--font-weight-700);
     font-size: 18px;
-    color: #151515;
+    color: #1E1E1E;
     margin: 0px;
 }
 
@@ -635,7 +737,7 @@ nav ul li:hover {
     font-weight: var(--font-weight-400);
     font-size: 13px;
     line-height: 118%;
-    color: #151515;
+    color: #1E1E1E;
     margin: 0px;
 }
 
@@ -655,7 +757,7 @@ nav ul li:hover {
 .title_info_cursos_online h2 {
     font-weight: var(--font-weight-400);
     font-size: 12px;
-    color: #151515;
+    color: #1E1E1E;
     margin: 0px;
 }
 
@@ -672,14 +774,13 @@ nav ul li:hover {
     width: 100%;
     max-width: 220px;
     background-color: transparent;
-    border: 1px solid #16316F;
-
+    border: 1px solid var(--color-principal)
 }
 
 .btn_info_cursos_online h2 {
     font-weight: var(--font-weight-700);
     font-size: 14px;
-    color: #16316F;
+    color: var(--color-principal);
     margin: 0px;
 }
 
@@ -743,6 +844,12 @@ nav ul li:hover {
     gap: 20px;
 }
 
+.area_certificado img {
+    width: 100%;
+    max-width: 18px;
+    height: 18px;
+}
+
 .btn_certificado {
     display: flex;
     justify-content: center;
@@ -750,14 +857,14 @@ nav ul li:hover {
     max-width: max-content;
     padding: 10px 20px;
     width: 100%;
-    border: 1px solid #16316F;
+    border: 1px solid #F76818;
     border-radius: 8px;
 }
 
 .btn_certificado h2 {
     font-weight: var(--font-weight-700);
     font-size: 14px;
-    color: #16316F;
+    color: var(--color-secundario);
     margin: 0px;
 }
 
@@ -850,14 +957,14 @@ table.striped>tbody>tr:nth-child(odd) {
     align-items: center;
     width: 300px;
     padding: 10px 20px;
-    border: 1px solid #16316F;
+    border: 1px solid #FFD1B7;
     border-radius: 8px;
 }
 
 .btn_fale_conosco h2 {
     font-weight: var(--font-weight-700);
     font-size: 14px;
-    color: #16316F;
+    color: #F76818;
     margin: 0px;
 }
 
@@ -909,8 +1016,8 @@ table.striped>tbody>tr:nth-child(odd) {
     max-width: 320px;
     padding: 10px 20px;
     width: 100%;
-    background-color: #16316F;
-    border: 1px solid #16316F;
+    background-color: var(--color-principal);
+    border: 1px solid var(--color-principal);
     border-radius: 8px;
 }
 
@@ -993,7 +1100,7 @@ footer {
     font-family: 'Lato';
     font-weight: var(--font-weight-700);
     font-size: 20px;
-    color: #980CF7;
+    color: var(--color-principal);
     margin: 0px;
 }
 
@@ -1009,7 +1116,7 @@ footer {
 .copy {
     display: flex;
     justify-content: center;
-    background: #980CF7;
+    background-color: var(--color-principal);
     padding: 20px 0px;
     width: 100%;
     margin-top: 40px;
@@ -1047,6 +1154,15 @@ footer {
 
 
 @media(max-width: 1024px) {
+
+
+    .area_drop_down_perfil_int {
+        text-align: left;
+    }
+    .area_drop_down_perfil {
+        top: 70px;
+    }
+
     .area_faq {
         padding: 0px 20px;
     }
@@ -1075,7 +1191,7 @@ footer {
         }
 
         100% {
-            top: 120px;
+            top: 110px;
         }
 
     }
@@ -1153,6 +1269,14 @@ footer {
         flex-direction: column;
         width: 100%;
         gap: 12px;
+    }
+
+    .card_perfil {
+        max-width: 474px;
+    }
+
+    .card_tempo {
+        max-width: 474px;
     }
 
     /*Container 1*/
@@ -1266,11 +1390,41 @@ footer {
         gap: 20px;
     }
 
+
+    
     td,
     th {
         padding: 15px 15px !important;
     }
 
+    table.responsive-table thead {
+        display: flex !important;
+        width: 100% !important;
+        float: none;
+    }
+
+    table.responsive-table {
+        display: inline-table !important;
+    }
+
+    table.responsive-table thead tr {
+        display: flex !important;
+        justify-content: space-between !important;
+        padding: 0 10px 0 0 !important;
+        width: 100% !important;
+    }
+
+    table.responsive-table tbody {
+        display: inline-table !important;
+        width: 100% !important;
+    }
+
+    table.responsive-table.bordered tbody tr {
+        border-right: 1px solid #d0d0d0;
+        display: flex !important;
+        width: 100% !important;
+        justify-content: space-between !important;
+    }
 
     /*footer*/
     .area_footer {
@@ -1290,53 +1444,15 @@ footer {
 
 @media(max-width: 480px) {
 
-    /*table.responsive-table tbody {
-        display: flex !important;
-        width: 100% !important;
-        position: relative !important;
-        overflow-x: auto !important;
-        white-space: normal !important;
-    }
-
-    table.responsive-table thead tr {
-        display: flex !important;
-        padding: 0px 0px 0px 8px !important;
-        justify-content: space-between !important;
-        width: 95% !important;
-        border: 0 !important;
-    }
-
-    table.responsive-table.bordered th {
-        font-size: 10px;
-    }
-
-    table.striped>tbody>tr>td {
-        font-size: 9px !important;
-    }
-
-    table.responsive-table thead {
-        float: none !important;
-        border: 0 !important;
-        border-right: 0 !important;
-    }
-
-    .oferta {
-        display: none !important;
-    }
-
-    .btn_certificado {
-        display: none;
-    }
-
-    td,
-    th {
-        padding: 10px 0px !important;
-    }*/
-
     /*Container 1*/
     header {
         background-color: #FFFFFF;
-        padding: 10px 10px;
+        padding: 20px 20px;
+    }
+
+    .area_logo img {
+        width: 100%;
+        max-width: 140px;
     }
 
     .title_logo h2 {
@@ -1414,7 +1530,7 @@ footer {
     }
 
     .numero {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .nome_ranking h2 {
@@ -1460,13 +1576,16 @@ footer {
     }
 
     /*Jornada*/
+    .area_btns_cursos {
+        padding: 0px 20px;
+    }
 
     .area_numeros_jornada_int {
-        max-width: 70px;
+        max-width: 65px;
     }
 
     .area_container_2 {
-        padding: 20px 0px;
+        padding: 20px 20px;
     }
 
     .info_numeros_jornada p {
@@ -1594,4 +1713,17 @@ footer {
         gap: 30px;
         padding: 0px 0px 0px 0px;
     }
+
+    table.responsive-table.bordered th {
+        font-size: 10px;
+    }
+    table.responsive-table.bordered td {
+        font-size: 10px;
+    }
+    table.responsive-table.bordered tbody tr {
+        justify-content: flex-start !important;
+        gap: 30px;
+        padding: 0px 0px 0px 6px !important;
+    }
+
 }

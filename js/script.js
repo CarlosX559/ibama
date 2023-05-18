@@ -3,7 +3,7 @@ function menu() {
 
     let menu_mobile  = document.querySelector('.menu_mobile');
     menu_mobile.style.display = "-webkit-flex";
-    menu_mobile.style.top = "120px";
+    menu_mobile.style.top = "110px";
     menu_mobile.style.animation = "move ease-in 400ms";
      
         setTimeout(() => {
@@ -59,3 +59,41 @@ function faq() {
 
 }
 faq();
+
+function btn_menu() {
+
+    let btn = document.querySelector(".btn_menu.desktop");
+    let btn_m = document.querySelector(".btn_menu.mobile");
+    let area_menu = document.querySelector(".area_drop_down_perfil");
+    let area_menu_m = document.querySelector(".area_drop_down_perfil.mobile");
+
+    btn.addEventListener( 'click', () => {
+    
+        if( area_menu.classList.contains('open') ) {
+            area_menu.classList.toggle('open');
+            area_menu.classList.toggle('close');
+           
+        }else {
+            area_menu.classList.add('open');
+            area_menu.classList.add('close');
+            area_menu.classList.toggle('close');
+        }
+
+    });
+
+    btn_m.addEventListener( 'click', () => {
+       
+        if( area_menu_m.classList.contains('open') ) {
+            area_menu_m.classList.toggle('open');
+            area_menu_m.classList.toggle('close');
+           
+        }else {
+            area_menu_m.classList.add('open');
+            area_menu_m.classList.add('close');
+            area_menu_m.classList.toggle('close');
+        }
+
+    });
+    
+}
+btn_menu();
