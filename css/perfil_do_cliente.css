@@ -1407,6 +1407,7 @@ footer {
         border-right: 1px solid #d0d0d0;
         display: flex !important;
         width: 100% !important;
+        align-items: center !important;
         justify-content: space-between !important;
     }
 
@@ -1711,6 +1712,7 @@ footer {
     }
     table.responsive-table.bordered tbody tr {
         justify-content: flex-start !important;
+        align-items: center !important;
         gap: 30px;
         padding: 0px 0px 0px 6px !important;
     }
