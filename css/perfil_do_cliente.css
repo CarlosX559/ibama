@@ -1704,6 +1704,13 @@ footer {
         padding: 0px 0px 0px 0px;
     }
 
+    .sub_title_footer p {
+        color: rgba(30, 30, 30, 0.5);
+    }
+    .title_footer_int h2 {
+        color: rgba(30, 30, 30, 0.5);
+    }
+
     table.responsive-table.bordered th {
         font-size: 10px;
     }
