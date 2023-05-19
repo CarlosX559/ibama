@@ -148,7 +148,7 @@ nav ul li:hover {
     background: #FFFCF8;
     border: 1px solid #F9ECD4;
     box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.08);
-    border-radius: 0px 0px 10px 10px; 
+    border-radius: 0px 0px 10px 10px;
 }
 
 .area_drop_down_perfil.open {
@@ -569,7 +569,7 @@ nav ul li:hover {
     width: 100%;
     position: relative;
     z-index: 1;
-    
+
 }
 
 .area_pesquisa {
@@ -788,6 +788,7 @@ nav ul li:hover {
     display: flex;
     width: 100%;
     flex-direction: column;
+    align-items: center;
     gap: 30px;
 }
 
@@ -795,7 +796,8 @@ nav ul li:hover {
     display: flex;
     flex-direction: column;
     gap: 0px;
-    max-width: max-content;
+    width: 100%;
+    max-width: 900px;
 }
 
 .info_finalizados p {
@@ -814,12 +816,13 @@ nav ul li:hover {
 
 
 .container_tabela {
-    padding: 50px 0px;
+    padding: 30px 0px;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 6px 9px 18px rgba(0, 0, 0, 0.03);
     border-radius: 5px;
     width: 100%;
+    max-width: 900px;
 }
 
 .area_certificado {
@@ -1014,7 +1017,9 @@ table.striped>tbody>tr:nth-child(odd) {
 
 /*Footer*/
 footer {
-    padding: 60px 0px 0px 0px;
+    padding: 40px 0px 0px 0px;
+    background-color: #FFFFFF;
+    margin: 40px 0px 0px 0px;
 }
 
 .container_footer {
@@ -1040,12 +1045,13 @@ footer {
 .footer_col_1 {
     display: flex;
     align-items: flex-start;
-    gap: 20px;
+    gap: 40px;
     max-width: 520px;
 }
 
 .footer_col_2_total {
     display: flex;
+    align-items: flex-start;
     gap: 100px;
 }
 
@@ -1065,7 +1071,7 @@ footer {
 .area_texts_footer {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 
 .title_footer_int h2 {
@@ -1084,7 +1090,7 @@ footer {
     font-family: 'Lato';
     font-weight: var(--font-weight-700);
     font-size: 20px;
-    color: var(--color-principal);
+    color: #1E1E1E;
     margin: 0px;
 }
 
@@ -1100,10 +1106,15 @@ footer {
 .copy {
     display: flex;
     justify-content: center;
-    background-color: var(--color-principal);
+    background-color: #FFFFFF;
     padding: 20px 0px;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 20px;
+}
+
+.border_footer {
+    border: 1px solid #1E1E1E;
+    width: 100%;
 }
 
 .copy_int {
@@ -1116,17 +1127,19 @@ footer {
 
 .area_copy {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
     padding: 0px 20px;
+    width: 100%;
 }
 
 .title_copy h2 {
     font-family: 'Lato';
     font-weight: var(--font-weight-400);
     font-size: 14px;
-    color: #FFFFFF;
+    color: #1E1E1E;
     margin: 0px;
 }
 
@@ -1143,6 +1156,7 @@ footer {
     .area_drop_down_perfil_int {
         text-align: left;
     }
+
     .area_drop_down_perfil {
         top: 70px;
     }
@@ -1375,7 +1389,7 @@ footer {
     }
 
 
-    
+
     td,
     th {
         padding: 15px 15px !important;
@@ -1646,7 +1660,7 @@ footer {
     }
 
     .container_tabela {
-        padding: 40px 0px;
+        padding: 20px 0px;
     }
 
     .info_finalizados p {
@@ -1671,9 +1685,11 @@ footer {
     footer {
         padding: 40px 0px 0px 0px;
     }
+
     .area_footer {
-        gap: 30px;
+        gap: 20px;
     }
+
     .footer_col_2_total {
         gap: 20px;
         flex-direction: column;
@@ -1693,15 +1709,34 @@ footer {
         text-align: left;
     }
 
+    .title_footer h2 {
+        font-size: 18px;
+        color: #1E1E1E;
+    }
+
+    .copy {
+        background-color: #FFF9EE;
+        margin-top: 10px;
+    }
+
     .area_copy {
         flex-direction: column;
         align-items: center;
         gap: 10px;
     }
 
+    .title_copy h2 {
+        font-family: 'Lato';
+        font-weight: var(--font-weight-400);
+        font-size: 14px;
+        color: #1E1E1E;
+        margin: 0px;
+    }
+
     .border_footer {
-        border: 1px solid #FFFFFF;
+        border: 1px solid #1E1E1E;
         width: 100%;
+        max-width: 310px;
     }
 
     .area_redes {
@@ -1714,21 +1749,34 @@ footer {
     .sub_title_footer p {
         color: rgba(30, 30, 30, 0.5);
     }
+
     .title_footer_int h2 {
         color: rgba(30, 30, 30, 0.5);
     }
+    table.responsive-table.bordered th {
+        padding: 15px 5px !important;
+    }
 
+    table.responsive-table thead tr {
+        padding: 0 0px 0 0 !important;
+    }
+    td, th {
+        padding: 15px 10px !important;
+    }
     table.responsive-table.bordered th {
         font-size: 10px;
     }
+
     table.responsive-table.bordered td {
         font-size: 10px;
     }
+
+
     table.responsive-table.bordered tbody tr {
         justify-content: flex-start !important;
         align-items: center !important;
-        gap: 30px;
-        padding: 0px 0px 0px 6px !important;
+        gap: 55px;
+        padding: 0px 0px 0px 0px !important;
     }
 
 }
