@@ -1446,6 +1446,7 @@ footer {
 
     .area_logo {
         gap: 10px;
+        max-width: 280px;
     }
 
     .area_container_1 {
