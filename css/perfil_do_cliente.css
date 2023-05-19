@@ -797,7 +797,6 @@ nav ul li:hover {
     flex-direction: column;
     gap: 0px;
     width: 100%;
-    max-width: 900px;
 }
 
 .info_finalizados p {
@@ -822,7 +821,7 @@ nav ul li:hover {
     box-shadow: 6px 9px 18px rgba(0, 0, 0, 0.03);
     border-radius: 5px;
     width: 100%;
-    max-width: 900px;
+
 }
 
 .area_certificado {
