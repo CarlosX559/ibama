@@ -1702,7 +1702,8 @@ footer {
     }
 
     .footer_col_1 {
-        max-width: 340px;
+        width: 100%;
+        max-width: 345px;
         align-items: flex-start;
         flex-direction: column;
         text-align: left;
@@ -1752,6 +1753,7 @@ footer {
     .title_footer_int h2 {
         color: rgba(30, 30, 30, 0.5);
     }
+
     table.responsive-table.bordered th {
         padding: 15px 5px !important;
     }
@@ -1759,9 +1761,12 @@ footer {
     table.responsive-table thead tr {
         padding: 0 0px 0 0 !important;
     }
-    td, th {
+
+    td,
+    th {
         padding: 15px 10px !important;
     }
+
     table.responsive-table.bordered th {
         font-size: 10px;
     }
