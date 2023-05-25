@@ -136,6 +136,7 @@ nav ul li:hover {
     border: 1px solid #F9ECD4;
     box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.08);
     border-radius: 0px 0px 10px 10px;
+    z-index: 99;
 }
 
 .area_drop_down_perfil .mobile {
@@ -1908,11 +1909,352 @@ footer {
         height: 100%;
         padding: 60px 0px 40px 0px;
     }
+
     .area_login {
         height: 100%;
         padding: 30px;
     }
+
     .area_login form {
         padding: 0px;
+    }
+}
+
+/******  Página inscrição 2 ******/
+
+.container_inscricao {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 60px 0px 60px 0px;
+    height: 65vh;
+}
+
+.container_inscricao_int {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    max-width: 1280px;
+}
+
+.area_nome_curso {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+    justify-content: center;
+    width: 100%;
+    padding: 40px 0px 0px 0px;
+}
+
+.area_nome_curso img {
+    border-radius: 20px;
+    max-width: max-content;
+    width: 100%;
+}
+
+.area_texts_curso {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 640px;
+}
+
+.line_curso_novo {
+    width: 100%;
+    height: 2px;
+    background-color: #707070;
+    opacity: 0.22;
+    margin-top: 40px;
+}
+
+.title_curso_novo h2 {
+    font-weight: var(--font-weight-700);
+    font-size: 30px;
+    color: #F76818;
+    margin: 0px;
+}
+
+.area_info_curso_novo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.title_info_curso_novo h2 {
+    font-weight: var(--font-weight-500);
+    font-size: 16px;
+    color: #F76818;
+    margin: 0px;
+}
+
+.sub_title_info_curso_novo p {
+    font-weight: var(--font-weight-400);
+    font-size: 13px;
+    line-height: 16px;
+    color: #1E1E1E;
+    margin: 0px;
+}
+
+.area_inscricao_curso_novo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    gap: 14px;
+    width: 100%;
+}
+
+.area_info_inscricao {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.area_info_texts_inscricao {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0px;
+}
+
+.title_texts_incricao h2 {
+    font-weight: var(--font-weight-400);
+    font-size: 10px;
+    line-height: 12px;
+    color: rgba(30, 30, 30, 0.7);
+    margin: 0px;
+}
+
+.sub_title_texts_incricao p {
+    font-family: 'Rubik';
+    font-weight: var(--font-weight-500);
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(30, 30, 30, 0.7);
+    margin: 0px;
+}
+
+.area_btns_curso_novo {
+    display: flex;
+    gap: 30px;
+}
+
+.btn_voltar {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.title_btn_voltar h2 {
+    font-weight: var(--font-weight-700);
+    font-size: 9px;
+    color: #F76818;
+    margin: 0px;
+}
+
+.btn_inscreva_se {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 200px;
+    padding: 15px 20px;
+    background: #980CF7;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.title_btn_inscreva_se h2 {
+    font-weight: var(--font-weight-700);
+    font-size: 9px;
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+.area_inscricao {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1170px;
+    filter: drop-shadow(0px 13px 30px rgba(0, 0, 0, 0.071));
+    border-radius: 40px;
+    background: #FFFFFF;
+    padding: 60px 80px;
+    height: 600px;
+}
+
+.area_inscricao_int {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: calc(100% - 100px);
+}
+
+.numeracao_info_inscricao {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.numeracao_info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 100%;
+    background: #FCB21D;
+}
+
+.area_numeracao_inscricao {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    left: 0px;
+}
+
+.area_numeracao_inscricao_2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    left: calc(50% - 40px);
+}
+
+.numeracao_info_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 100%;
+    background: #FCB21D;
+}
+
+.area_numeracao_inscricao_3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    left: calc(100% - 80px);
+    max-width: 100px;
+}
+
+.numeracao_info_3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 100%;
+    background: transparent;
+    border: 2px solid #F76818;
+
+}
+
+.numero_title_inscricao_3 h2 {
+    font-family: 'Rubik';
+    font-weight: var(--font-weight-500);
+    font-size: 14px;
+    color: #F76818;
+    margin: 0px;
+}
+
+.numero_title_inscricao_info_3 h2 {
+    font-family: 'Rubik';
+    font-weight: var(--font-weight-700);
+    font-size: 12px;
+    color: #F76818;
+    margin: 0px;
+    text-align: center;
+}
+
+.numero_title_inscricao_info h2 {
+    font-family: 'Lato';
+    font-weight: var(--font-weight-700);
+    font-size: 12px;
+    color: #F76818;
+    margin: 0px;
+}
+
+.numero_title_inscricao h2 {
+    font-family: 'Rubik';
+    font-weight: var(--font-weight-500);
+    font-size: 14px;
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+.line_inscricao {
+    position: absolute;
+    left: 50px;
+    top: 15px;
+    width: 50%;
+    height: 4px;
+    background-color: #FCB21D;
+    z-index: -1;
+}
+
+.line_inscricao_2 {
+    position: absolute;
+    left: calc(50% + 70px);
+    top: 15px;
+    width: 50%;
+    height: 2px;
+    background-color: #F76818;
+    z-index: -1;
+    opacity: 0.18;
+}
+
+@media(max-width: 1024px) {
+    .container_inscricao {
+        height: 100%;
+        padding: 60px 0px 30px 0px;
+    }
+
+    .area_inscricao {
+        height: 100%;
+        padding: 40px 60px;
+    }
+
+    .area_nome_curso {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .area_texts_curso {
+        text-align: center;
+    }
+}
+
+@media(max-width: 768px) {
+    .container_inscricao {
+        padding: 40px 0px 0px 0px;
+    }
+    .area_inscricao_curso_novo {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .area_nome_curso {
+        gap: 20px;
+    }
+    .area_inscricao {
+        height: 100%;
+        padding: 40px 40px;
+    }
+
+    .title_curso_novo h2 {
+        font-size: 26px;
     }
 }
