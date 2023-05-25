@@ -1904,6 +1904,13 @@ footer {
     cursor: pointer;
 }
 
+@media (min-width: 700px) and (orientation: landscape) { 
+    .container_login {
+        height: 100%;
+        padding: 40px 0px 20px 0px;
+    }
+ }
+
 @media(max-width: 480px) {
     .container_login {
         height: 100%;
@@ -2234,7 +2241,10 @@ footer {
     }
 
     .area_texts_curso {
-        text-align: center;
+        text-align: left;
+    }
+    .line_curso_novo {
+        margin-top: 20px;
     }
 }
 
