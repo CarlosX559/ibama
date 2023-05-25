@@ -1904,7 +1904,7 @@ footer {
     cursor: pointer;
 }
 
-@media (min-width: 700px) and (orientation: landscape) {
+@media (max-width: 768px) and (orientation: landscape) {
     .container_login {
         height: 100%;
         padding: 40px 0px 20px 0px;
@@ -1934,7 +1934,7 @@ footer {
     justify-content: center;
     width: 100%;
     padding: 60px 0px 60px 0px;
-    height: 65vh;
+    height: 100%;
 }
 
 .container_inscricao_int {
