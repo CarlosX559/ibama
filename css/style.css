@@ -1904,12 +1904,12 @@ footer {
     cursor: pointer;
 }
 
-@media (min-width: 700px) and (orientation: landscape) { 
+@media (min-width: 700px) and (orientation: landscape) {
     .container_login {
         height: 100%;
         padding: 40px 0px 20px 0px;
     }
- }
+}
 
 @media(max-width: 480px) {
     .container_login {
@@ -2243,6 +2243,7 @@ footer {
     .area_texts_curso {
         text-align: left;
     }
+
     .line_curso_novo {
         margin-top: 20px;
     }
@@ -2252,13 +2253,16 @@ footer {
     .container_inscricao {
         padding: 40px 0px 0px 0px;
     }
+
     .area_inscricao_curso_novo {
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .area_nome_curso {
         gap: 20px;
     }
+
     .area_inscricao {
         height: 100%;
         padding: 40px 40px;
@@ -2266,5 +2270,16 @@ footer {
 
     .title_curso_novo h2 {
         font-size: 26px;
+    }
+}
+
+@media(max-width: 480px) {
+    .area_nome_curso .curso_novo_img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .line_curso_novo {
+        margin-top: 10px;
     }
 }
