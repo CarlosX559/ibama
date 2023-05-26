@@ -2247,6 +2247,7 @@ footer {
 
 .form {
     width: 100%;
+    padding: 0px;
 }
 
 .form input {
