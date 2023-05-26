@@ -2401,22 +2401,28 @@ footer {
         max-width: 100%;
         width: 100%;
     }
-
+    .area_nome_curso_cadastro {
+        padding: 20px 0px 0px 0px;
+    }
     .line_curso_novo {
         margin-top: 10px;
     }
+
     .area_numeracao_inscricao_3 {
         left: calc(100% - 95px);
     }
+
     .line_inscricao_2 {
         left: calc(50% + 52px);
     }
+
     /*Cadastro*/
     .box_cadastro {
         height: auto;
         padding: 40px 0px;
         max-width: 100%;
     }
+
     .area_form_cadastro_total {
         flex-direction: column;
         gap: 15px;
@@ -2429,14 +2435,28 @@ footer {
     .btn_inscreva_se {
         padding: 10px 15px;
     }
+
     .area_nome_curso_cadastro {
         flex-direction: column;
         gap: 20px;
     }
+    .area_btns_cadastro {
+        display: flex;
+        gap: 10px;
+    }
     .area_btns_curso_novo_cadastro {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         gap: 10px;
         width: 100%;
+    }
+}
+
+@media(max-width: 400px) {
+    .title_btn_inscreva_se h2 {
+        font-size: 8px;
+    }
+    .title_btn_conta h2 {
+        font-size: 8px;
     }
 }
