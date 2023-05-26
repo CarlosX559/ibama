@@ -2404,6 +2404,12 @@ footer {
     .line_curso_novo {
         margin-top: 10px;
     }
+    .area_numeracao_inscricao_3 {
+        left: calc(100% - 95px);
+    }
+    .line_inscricao_2 {
+        left: calc(50% + 52px);
+    }
     /*Cadastro*/
     .box_cadastro {
         height: auto;
