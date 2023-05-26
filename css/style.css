@@ -2459,4 +2459,10 @@ footer {
     .title_btn_conta h2 {
         font-size: 8px;
     }
+    .btn_inscreva_se {
+        gap: 5px;
+    }
+    .title_btn_voltar h2 {
+        font-size: 8px;
+    }
 }
