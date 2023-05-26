@@ -2235,6 +2235,16 @@ footer {
 
 /*Cadastro**/
 
+.area_nome_curso_cadastro {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    justify-content: center;
+    width: 100%;
+    padding: 40px 0px 0px 0px;
+}
+
+
 .form {
     width: 100%;
 }
