@@ -2387,7 +2387,7 @@ footer {
 
     .area_inscricao {
         height: 100%;
-        padding: 40px 40px;
+        padding: 40px 25px;
     }
 
     .title_curso_novo h2 {
@@ -2406,7 +2406,7 @@ footer {
     }
     /*Cadastro*/
     .box_cadastro {
-        max-width: 360px;
+        max-width: 320px;
     }
     .area_form_cadastro_total {
         flex-direction: column;
@@ -2420,7 +2420,10 @@ footer {
     .btn_inscreva_se {
         padding: 10px 15px;
     }
-
+    .area_nome_curso_cadastro {
+        flex-direction: column;
+        gap: 20px;
+    }
     .area_btns_curso_novo_cadastro {
         display: flex;
         justify-content: center;
