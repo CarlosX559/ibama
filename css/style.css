@@ -2406,6 +2406,8 @@ footer {
     }
     /*Cadastro*/
     .box_cadastro {
+        height: auto;
+        padding: 40px 0px;
         max-width: 320px;
     }
     .area_form_cadastro_total {
