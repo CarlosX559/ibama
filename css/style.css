@@ -2394,7 +2394,10 @@ footer {
     .line_curso_novo {
         margin-top: 10px;
     }
-
+    /*Cadastro*/
+    .box_cadastro {
+        max-width: 360px;
+    }
     .area_form_cadastro_total {
         flex-direction: column;
         gap: 15px;
