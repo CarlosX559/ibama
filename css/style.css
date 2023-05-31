@@ -513,6 +513,7 @@ nav ul li:hover {
     align-items: center;
     flex-direction: column;
     width: 100%;
+    max-width: 1280px;
 }
 
 .area_btns_cursos {
@@ -881,6 +882,216 @@ table.centered tbody tr td {
 table.striped>tbody>tr:nth-child(odd) {
     background-color: #ebebeb !important;
 }
+
+
+/*Container relacionados*/
+
+#noticia {
+    background-color: #F76818;
+    width: 100%;
+    padding: 60px 0px 60px 0px;
+}
+
+.container_noticia {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.container_noticia_int {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+}
+
+.area_noticia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+.container_relacionados {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.container_relacionados_int {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+}
+
+.area_relacionados {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+
+.owl-theme .owl-nav {
+    position: absolute;
+    top: 50%;
+    bottom: 0px;
+    width: 96%;
+    height: 30px;
+    margin: 0px !important;
+}
+
+.owl-prev {
+    position: absolute;
+    top: 0%;
+    left: -40px;
+    bottom: 0px;
+    height: 30px;
+    background-color: transparent !important;
+    opacity: 1 !important;
+    transition: all ease 200ms;
+    margin: 0px !important;
+}
+
+.owl-prev:hover {
+    transform: scale(1.06);
+}
+
+.owl-next:hover {
+    transform: scale(1.06);
+}
+
+.owl-next {
+    position: absolute;
+    top: 0%;
+    right: -40px;
+    bottom: 0px;
+    height: 30px;
+    background-color: transparent !important;
+    opacity: 1 !important;
+    transition: all ease 200ms;
+    margin: 0px !important;
+}
+
+.area_texts_relacionados {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.title_relacionados h2 {
+    font-weight: var(--font-weight-400);
+    font-size: 22px;
+    text-align: center;
+    color: #608476;
+    margin: 0px;
+}
+
+.title_noticiais h2 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: var(--font-weight-700);
+    font-size: 40px;
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+.item {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.area_cards_relacionados_noticia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 0px 20px;
+    max-width: 1200px;
+}
+
+.card_relacionados_noticia {
+    width: 100%;
+    height: 420px;
+    max-width: 270px;
+    background: #FFFFFF;
+   
+filter: drop-shadow(0px 20px 30px rgba(117, 138, 159, 0.051));
+    border-radius: 5px;
+}
+
+.area_texts_relacionados_2_noticia {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 20px;
+}
+
+.title_noticia_card h2 {
+    font-family: 'Rubik';
+    font-weight: var(--font-weight-500);
+    font-size: 22px;
+    color: #1E1E1E;
+    margin: 0px;
+}
+
+.sub_title_noticia_card p {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: var(--font-weight-400);
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(30, 30, 30, 0.7);
+    margin: 0px;
+}
+
+.img_relacionados img {
+    width: 100%;
+    max-width: max-content;
+    filter: drop-shadow(6px 9px 18px rgba(0, 0, 0, 0.03));
+}
+
+.area_texts_relacionados_2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 20px;
+}
+
+.title_info_card h2 {
+    font-weight: var(--font-weight-700);
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #16316F;
+    margin: 0px;
+}
+
+.sub_title_info_card p {
+    font-weight: var(--font-weight-400);
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: rgba(21, 21, 21, 0.5);
+    margin: 0px;
+}
+
+.border_card {
+    width: 34px;
+    height: 4px;
+    background: #608476;
+}
+
 
 /*Faq*/
 
@@ -2401,9 +2612,11 @@ footer {
         max-width: 100%;
         width: 100%;
     }
+
     .area_nome_curso_cadastro {
         padding: 20px 0px 0px 0px;
     }
+
     .line_curso_novo {
         margin-top: 10px;
     }
@@ -2440,10 +2653,12 @@ footer {
         flex-direction: column;
         gap: 20px;
     }
+
     .area_btns_cadastro {
         display: flex;
         gap: 10px;
     }
+
     .area_btns_curso_novo_cadastro {
         display: flex;
         justify-content: space-between;
@@ -2456,13 +2671,330 @@ footer {
     .title_btn_inscreva_se h2 {
         font-size: 8px;
     }
+
     .title_btn_conta h2 {
         font-size: 8px;
     }
+
     .btn_inscreva_se {
         gap: 5px;
     }
+
     .title_btn_voltar h2 {
         font-size: 8px;
     }
+}
+
+
+/******  Home  ********/
+
+.container_home {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #980CF7;
+    padding: 40px 0px 0px 0px;
+}
+
+.container_home_int {
+    display: flex;
+    justify-content: center;
+    max-width: 1280px;
+    width: 100%;
+}
+
+.area_home {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+}
+
+.area_texts_home {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0px;
+    width: 100%;
+    max-width: 470px;
+}
+
+.title_home h2 {
+    font-family: 'Rubik';
+    font-weight: var(--font-weight-400);
+    font-size: 45px;
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+.sub_title_home p {
+    font-family: 'Rubik';
+    font-weight: var(--font-weight-700);
+    font-size: 56px;
+    line-height: 52px;
+    color: #FCB21D;
+    margin: 0px;
+}
+
+.area_img_home img {
+    max-width: 700px;
+    width: 100%;
+    margin-bottom: -4px;
+}
+
+.container_cards_home {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0px 0px 60px 0px;
+    margin-top: -40px;
+}
+
+.container_cards_home_int {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1280px;
+}
+
+.title_cursos_pesquisa_home h2 {
+    font-weight: var(--font-weight-700);
+    font-size: 40px;
+    text-align: center;
+    color: #1E1E1E;
+    margin: 0px 0px 60px 0px;
+}
+
+.area_pesquisa_home {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 0px 0px 0px;
+    width: 100%;
+    max-width: 1170px;
+}
+
+.area_cursos_home {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.title_opcao_curso_home h2 {
+    font-weight: var(--font-weight-700);
+    font-size: 22px;
+    color: rgba(30, 30, 30, 0.7);
+    margin: 0px;
+}
+
+.border_pesquisa_home {
+    width: 100%;
+    max-width: 1170px;
+    border: 1px solid rgba(30, 30, 30, 0.2);
+}
+
+.area_cards_home {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.area_img_cursos_online_home {
+    position: relative;
+}
+
+.area_img_cursos_online_home img {
+    width: 100%;
+    max-width: max-content;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.area_texts_cursos_online_home {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: max-content;
+    padding: 30px 25px 30px 25px;
+}
+
+.area_info_cursos_online_home {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0px 25px 15px 25px;
+}
+
+.bg_card_principal {
+    border-bottom: 3px solid #FCB21D;
+}
+
+.area_info_cursos_online_int_home_total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.area_info_cursos_online_int_home {
+    display: flex;
+    align-items: flex-start;
+    max-width: 130px;
+    gap: 8px;
+}
+
+.title_cursos_online_home h2 {
+    font-weight: var(--font-weight-700);
+    font-size: 24px;
+    color: #FCB21D;
+    margin: 0px;
+}
+
+.sub_title_cursos_online_home p {
+    font-family: 'Lato';
+    font-weight: var(--font-weight-500);
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(30, 30, 30, 0.5);
+    margin: 0px;
+}
+
+.cards_home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 40px 0px 40px;
+    gap: 20px;
+    background-color: #FFFFFF;
+    filter: drop-shadow(0px 15px 26px rgba(0, 0, 0, 0.071));
+    width: 280px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.title_cards_home h2 {
+    font-family: 'Rubik';
+    font-weight: 700;
+    font-size: 26px;
+    text-align: center;
+    color: #980CF7;
+    margin: 0px;
+}
+
+.pesquisa_home {
+    filter: drop-shadow(0px 10px 16px rgba(0, 0, 0, 0.071));
+    background-color: #FFFFFF !important;
+    width: 100%;
+    max-width: 1170px;
+    height: 70px !important;
+    border-radius: 4px !important;
+    border: none !important;
+    padding-left: 70px !important;
+    font-weight: var(--font-weight-500);
+    font-size: 18px;
+    color: #999999;
+    margin: 0px !important;
+    outline: none;
+}
+
+.pesquisa_home::placeholder {
+    font-weight: var(--font-weight-500);
+    font-size: 18px;
+    color: #999999;
+}
+
+.pesquisa_home:focus {
+    border-bottom: 0px !important;
+    box-shadow: 0px !important;
+}
+
+
+.area_container_2_home {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    flex-wrap: wrap;
+    max-width: 1170px;
+    padding: 40px 0px 60px 0px;
+}
+
+.card_cursos_online_home {
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 6px 9px 18px rgba(0, 0, 0, 0.03);
+    border-radius: 20px;
+    max-width: 360px;
+    width: 100%;
+    padding: 0px 0px 20px 0px;
+}
+
+.bg_card_home img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    max-width: max-content;
+}
+
+.curso_online_destaque_home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50px;
+    width: 100%;
+    position: absolute;
+    left: 10px;
+    top: 20px;
+}
+
+.curso_online_destaque_home h2 {
+    font-family: 'Lato';
+    font-weight: var(--font-weight-700);
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.area_btns_cursos_home {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.btn_info_cursos_online_home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    height: 40px;
+    width: 100%;
+    max-width: 270px;
+    background-color: #980CF7;
+
+}
+
+.btn_info_cursos_online_home h2 {
+    font-weight: var(--font-weight-700);
+    font-size: 14px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0px;
+}
+
+.btn_pesquisa_home {
+    padding: 15px 25px 15px 25px;
+    width: 100%;
+    max-width: max-content;
+    background: #980CF7;
+    border-radius: 100px;
+}
+
+.btn_pesquisa_home h2 {
+    font-family: 'Lato';
+    font-weight: var(--font-weight-500);
+    font-size: 18px;
+    color: #FFFFFF;
+    margin: 0px;
 }
