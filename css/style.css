@@ -643,6 +643,7 @@ nav ul li:hover {
     color: #FFFFFF;
     z-index: 1;
     border: 0px;
+    cursor: pointer;
 }
 
 .area_container_2 {
@@ -745,6 +746,10 @@ nav ul li:hover {
     font-size: 12px;
     color: #1E1E1E;
     margin: 0px;
+}
+
+.title_info_cursos_online h2 b {
+    color: rgba(30, 30, 30, 0.7);
 }
 
 .area_btn_info {
@@ -935,6 +940,7 @@ table.striped>tbody>tr:nth-child(odd) {
     justify-content: center;
     flex-direction: column;
     gap: 30px;
+    max-width: 1280px;
     width: 100%;
 }
 
@@ -2767,9 +2773,20 @@ footer {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: -4px;
 }
 
+.title_opcao_curso_home {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.border_curso_home {
+    border: 3px solid #FCB21D;
+    position: relative;
+    z-index: 1;
+}
 .title_opcao_curso_home h2 {
     font-weight: var(--font-weight-700);
     font-size: 22px;
@@ -2801,13 +2818,20 @@ footer {
     border-radius: 20px 20px 0px 0px;
 }
 
+.area_info_cursos_online_home_total {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 260px;
+}
+
 .area_texts_cursos_online_home {
     display: flex;
     flex-direction: column;
     gap: 10px;
     width: 100%;
     max-width: max-content;
-    padding: 30px 25px 30px 25px;
+    padding: 30px 25px 0px 25px;
 }
 
 .area_info_cursos_online_home {
@@ -2819,6 +2843,14 @@ footer {
 
 .bg_card_principal {
     border-bottom: 3px solid #FCB21D;
+}
+
+.bg_card_principal_2 {
+    border-bottom: 3px solid #F76818;
+}
+
+.bg_card_principal_3 {
+    border-bottom: 3px solid #1E1E1E;
 }
 
 .area_info_cursos_online_int_home_total {
@@ -2839,6 +2871,23 @@ footer {
     color: #FCB21D;
     margin: 0px;
 }
+
+.title_cursos_online_home_2 h2 {
+    font-weight: var(--font-weight-700);
+    font-size: 24px;
+    color: #F76818;
+    margin: 0px;
+}
+
+
+.title_cursos_online_home_3 h2 {
+    font-weight: var(--font-weight-700);
+    font-size: 24px;
+    color: #1E1E1E;
+    margin: 0px;
+}
+
+
 
 .sub_title_cursos_online_home p {
     font-family: 'Lato';
@@ -2932,10 +2981,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 50px;
-    width: 100%;
     position: absolute;
-    left: 10px;
+    left: 15px;
     top: 20px;
 }
 
@@ -2944,6 +2991,7 @@ footer {
     font-weight: var(--font-weight-700);
     font-size: 16px;
     color: #FFFFFF;
+    margin: 0px;
 }
 
 .area_btns_cursos_home {
@@ -2962,7 +3010,14 @@ footer {
     width: 100%;
     max-width: 270px;
     background-color: #980CF7;
+    transition: all ease 300ms;
+}
 
+.btn_info_cursos_online_home:hover {
+    background-color: #FFFFFF;
+}
+.btn_info_cursos_online_home:hover > h2 {
+    color: #980CF7;
 }
 
 .btn_info_cursos_online_home h2 {
