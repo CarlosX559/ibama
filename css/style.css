@@ -2787,6 +2787,7 @@ footer {
     position: relative;
     z-index: 1;
 }
+
 .title_opcao_curso_home h2 {
     font-weight: var(--font-weight-700);
     font-size: 22px;
@@ -3016,7 +3017,8 @@ footer {
 .btn_info_cursos_online_home:hover {
     background-color: #FFFFFF;
 }
-.btn_info_cursos_online_home:hover > h2 {
+
+.btn_info_cursos_online_home:hover>h2 {
     color: #980CF7;
 }
 
@@ -3279,6 +3281,7 @@ footer {
         font-size: 36px;
         line-height: 32px;
     }
+
     /*noticia*/
     #noticia {
         padding: 40px 0px 20px 0px;
@@ -3303,6 +3306,7 @@ footer {
     .card_info_home_4 {
         padding: 20px;
     }
+
     /*Cards home*/
     .title_cards_home h2 {
         font-size: 24px;
@@ -3324,10 +3328,11 @@ footer {
     .btn_info_cursos_online_home {
         max-width: 100%;
     }
-  
+
     .card_info_home_int {
         gap: 20px;
     }
+
     .title_info_home_total h2 {
         font-size: 28px;
     }
@@ -3377,6 +3382,18 @@ footer {
 
     .pesquisa_home::placeholder {
         font-size: 16px;
+    }
+
+    .card_cursos_online_home {
+        max-width: 325px;
+    }
+
+    .area_info_cursos_online_home_total {
+        height: 250px;
+    }
+
+    .area_texts_cursos_online_home {
+        padding: 25px 25px 0px 25px;
     }
 
     .area_cursos_home {
