@@ -1024,6 +1024,13 @@ table.striped>tbody>tr:nth-child(odd) {
     border-radius: 5px;
 }
 
+.area_texts_relacionados_2_noticia {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 30px 0px 30px;
+}
+
 .title_noticia_card h2 {
     font-family: 'Rubik';
     font-weight: var(--font-weight-500);
