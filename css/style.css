@@ -4202,7 +4202,7 @@ footer {
 .open {
     display: flex;
     height: fit-content;
-    max-height: 100% !important;
+    max-height: auto !important;
     transition: all ease-in-out 400ms;
     opacity: 1;
     transform: scaleY(1);
