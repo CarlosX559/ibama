@@ -701,7 +701,15 @@ nav ul li:hover {
 
 .area_img_cursos_online img {
     width: 100%;
-    max-width: max-content;
+    height: 200px;
+    object-fit: cover;
+}
+
+.area_texts_cursos_online_total {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 160px;
 }
 
 .area_texts_cursos_online {
@@ -710,7 +718,7 @@ nav ul li:hover {
     gap: 10px;
     width: 100%;
     max-width: 300px;
-    padding: 30px 25px 30px 25px;
+    padding: 20px 25px 0px 25px;
 }
 
 .title_cursos_online h2 {
@@ -889,6 +897,10 @@ table.striped>tbody>tr:nth-child(odd) {
     background-color: #ebebeb !important;
 }
 
+.title_tabela {
+    overflow-x: scroll;
+    max-width: 90px;
+}
 
 /*Container relacionados*/
 
@@ -4644,4 +4656,459 @@ footer {
     .area_matricula_int {
         height: 380px;
     }
+}
+
+
+/*****Página dashboard******/
+
+.container_ead_flex {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 60px 0px 60px 0px;
+}
+
+.container_ead_flex_int {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.area_ead_flex {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+}
+
+.title_ead_flex h2 {
+    font-weight: var(--font-weight-700);
+    font-size: 22px;
+    color: #151515;
+    margin: 0px;
+}
+
+.area_info_dashboard_1 {
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 5px;
+    filter: drop-shadow(0px 15px 26px rgba(0, 0, 0, 0.071));
+}
+
+.area_info_dashboard_1_int {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 35px 40px;
+}
+
+.info_dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    max-width: 200px;
+}
+
+.area_texts_dashboard {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.title_info_dashboard h2 {
+    font-weight: var(--font-weight-700);
+    font-size: 36px;
+    text-align: center;
+    color: #F76818;
+    margin: 0px;
+}
+
+.sub_title_info_dashboard p {
+    font-weight: var(--font-weight-400);
+    font-size: 12px;
+    text-align: center;
+    color: #1E1E1E;
+    margin: 0px;
+}
+
+
+.area_info_dashboard_2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.info_dashboard_2 {
+    width: 100%;
+    max-width: 280px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    filter: drop-shadow(0px 15px 26px rgba(0, 0, 0, 0.071));
+}
+
+.info_dashboard_2_int {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 25px 25px;
+}
+
+
+.info_matriculas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 80px;
+}
+
+.info_matriculas img {
+    max-width: 40px;
+    width: 100%;
+}
+
+.title_info_matriculas h2 {
+    font-weight: var(--font-weight-700);
+    font-size: 12px;
+    line-height: 15px;
+    color: #1E1E1E;
+    margin: 0px;
+}
+
+
+.info_matriculas_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 12px;
+    width: 100%;
+    max-width: 80px;
+    text-align: right;
+}
+
+.info_numeros_matriculas h2 {
+    font-weight: var(--font-weight-700);
+    font-size: 30px;
+    color: #F76818;
+    margin: 0px;
+}
+
+.btn_porcentagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 8px;
+    width: 100%;
+    max-width: max-content;
+    background: #FFFFFF;
+    border: 1px solid #F76818;
+    border-radius: 50px;
+}
+
+.btn_porcentagem h2 {
+    font-weight: var(--font-weight-500);
+    font-size: 8px;
+    color: #F76818;
+    margin: 0px;
+}
+
+.info_numeros_matriculas.ativo h2 {
+    font-weight: var(--font-weight-700);
+    font-size: 30px;
+    color: #980CF7;
+    margin: 0px;
+}
+
+.btn_porcentagem.ativo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 8px;
+    width: 100%;
+    max-width: max-content;
+    background: #FFFFFF;
+    border: 1px solid #980CF7;
+    border-radius: 50px;
+}
+
+.btn_porcentagem.ativo h2 {
+    font-weight: var(--font-weight-500);
+    font-size: 8px;
+    color: #980CF7;
+    margin: 0px;
+}
+
+.container_graficos_cursos {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.container_graficos_cursos_int {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.area_graficos_cursos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px;
+}
+
+
+.area_info_grafico_curso {
+    padding: 25px 20px;
+    max-width: 880px;
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 5px 11px rgba(0, 0, 0, 0.071);
+    border-radius: 10px;
+}
+
+
+.area_status_curso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 280px;
+    padding: 25px 0px;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 5px 11px rgba(0, 0, 0, 0.071);
+    border-radius: 10px;
+}
+
+
+.container_inscricoes {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 40px 0px 60px 0px;
+}
+
+.container_inscricoes_int {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.area_inscricoes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px;
+}
+
+.graficos_inscricoes {
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 5px 11px rgba(0, 0, 0, 0.071);
+    border-radius: 10px;
+    padding: 25px 20px;
+    width: 100%;
+    max-width: 585px;
+}
+
+.container_alunos {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0px 0px 40px 0px;
+}
+
+.container_alunos_int {
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.title_alunos h2 {
+    font-weight: var(--font-weight-700);
+    font-size: 18px;
+    line-height: 22px;
+    color: #1E1E1E;
+    margin: 0px 0px -30px 0px;
+}
+
+.area_alunos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px;
+
+}
+
+.graficos_alunos {
+    padding: 25px 20px;
+    max-width: 880px;
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 5px 11px rgba(0, 0, 0, 0.071);
+    border-radius: 10px;
+}
+
+
+.graficos_alunos_regiao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 280px;
+    padding: 25px 0px;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 5px 11px rgba(0, 0, 0, 0.071);
+    border-radius: 10px;
+}
+
+.area_alunos_2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 30px;
+
+}
+
+.graficos_alunos_2 {
+    display: flex;
+    justify-content: center;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 5px 11px rgba(0, 0, 0, 0.071);
+    border-radius: 10px;
+    padding: 25px 20px;
+    width: 100%;
+    max-width: 585px;
+    height: 320px;
+}
+
+@media(max-width: 1024px) {
+    .container_ead_flex {
+        padding: 40px 0px 40px 0px;
+    }
+
+    .area_ead_flex {
+        padding: 0px 20px;
+    }
+
+    .area_info_dashboard_1_int {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .area_info_dashboard_2 {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .area_status_curso {
+        max-width: 880px;
+        height: 400px;
+    }
+
+    .area_graficos_cursos {
+        justify-content: center;
+        padding: 0px 20px;
+    }
+
+    .area_inscricoes {
+        justify-content: center;
+        padding: 0px 20px;
+    }
+
+    .graficos_alunos_regiao {
+        max-width: 880px;
+        height: 400px;
+    }
+
+    .graficos_inscricoes {
+        max-width: 880px;
+    }
+
+    .container_alunos_int {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .area_alunos {
+        justify-content: center;
+        padding: 0px 20px;
+    }
+
+    .graficos_alunos_2 {
+        max-width: 880px;
+        height: 400px;
+    }
+
+    .area_alunos_2 {
+        justify-content: center;
+        padding: 0px 20px;
+    }
+
+}
+
+@media(max-width: 768px) {
+    .area_ead_flex {
+        gap: 20px;
+    }
+
+    .title_info_dashboard h2 {
+        font-size: 28px;
+    }
+
+}
+
+@media(max-width: 480px) {
+    .info_dashboard {
+        max-width: 140px;
+    }
+
+    .area_status_curso {
+        height: 300px;
+    }
+
+    .info_dashboard_2 {
+        max-width: 100%;
+    }
+
+    .info_dashboard_2_int {
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .graficos_alunos_2 {
+        height: auto;
+    }
+
 }
