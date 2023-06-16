@@ -897,10 +897,6 @@ table.striped>tbody>tr:nth-child(odd) {
     background-color: #ebebeb !important;
 }
 
-.title_tabela {
-    overflow-x: scroll;
-    max-width: 90px;
-}
 
 /*Container relacionados*/
 
@@ -1616,8 +1612,6 @@ footer {
         gap: 20px;
     }
 
-
-
     td,
     th {
         padding: 15px 15px !important;
@@ -1767,6 +1761,11 @@ footer {
 
     .xp_ranking h2 {
         font-size: 12px;
+    }
+
+    .title_tabela {
+        overflow-x: scroll;
+        max-width: 90px;
     }
 
     /*Container 2*/
