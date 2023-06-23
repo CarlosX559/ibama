@@ -5565,7 +5565,7 @@ table.striped>tbody>tr:nth-child(odd) {
 
 #table_populares td,
 th {
-    padding: 5px 20px !important;
+    padding: 15px 20px !important;
 }
 
 
@@ -5648,13 +5648,17 @@ th {
         padding: 5px 20px !important;
     }
 
+    #table_populares td,
+    th {
+        padding: 5px 20px !important;
+    }
+
     .area_matriculado_tabela {
         display: flex !important;
         align-items: center;
         gap: 20px;
         height: 48px;
     }
-
 
     .container_inscricoes {
         padding: 40px 0px 40px 0px;
@@ -5676,15 +5680,18 @@ th {
     .area_tabela_1 {
         max-width: 670px;
     }
+    .area_conclusao {
+        padding: 20px 20px 20px 20px;
+    }
     .area_infos_conclusao {
         gap: 15px;
     }
+
     .area_conclusao {
         max-width: 670px;
         width: 100%;
         margin: 0px 20px;
     }
-
 
     .area_populares {
         padding: 0px 20px;
