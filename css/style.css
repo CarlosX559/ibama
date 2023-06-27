@@ -5749,10 +5749,16 @@ th {
     }
 
     .area_tabela_populares {
-        padding: 20px 0px 20px 0px;
+        padding: 20px 0px 0px 0px;
     }
 
     .bg_nomes_populares {
         height: 100%;
+    }
+}
+
+@media(max-width: 768px) {
+    .area_icons_tabela {
+        height: 28px;
     }
 }
