@@ -2899,15 +2899,12 @@ footer {
     margin: 0px;
 }
 
-
 .title_cursos_online_home_3 h2 {
     font-weight: var(--font-weight-700);
     font-size: 24px;
     color: #1E1E1E;
     margin: 0px;
 }
-
-
 
 .sub_title_cursos_online_home p {
     font-family: 'Lato';
@@ -5760,5 +5757,187 @@ th {
 @media(max-width: 768px) {
     .area_icons_tabela {
         height: 28px;
+    }
+}
+
+
+
+/*******  Painel competencias  *******/
+
+.container_materias {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 60px 0px 40px 0px;
+}
+
+.container_materias_int {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1300px;
+    width: 100%;
+}
+
+.area_materias {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+}
+
+.card_materias {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 20px;
+    gap: 20px;
+    width: 100%;
+    max-width: 300px;
+    height: 364px;
+    background-color: #FFFFFF;
+    filter: drop-shadow(0px 15px 26px rgba(0, 0, 0, 0.071));
+}
+
+.title_materias h2 {
+    color: #1E1E1E;
+    font-size: 12px;
+    font-weight: var(--font-weight-700);
+    margin: 0px;
+}
+
+.info_dashboard_2_int_competenciais {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 25px 25px;
+    height: 126px;
+}
+
+.container_card_competencias {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0px 40px 0px;
+}
+
+.container_card_competencias_int {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1280px;
+    width: 100%;
+}
+
+.area_card_competencias {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.area_cards_competencias {
+    max-width: 1200px;
+}
+
+.card_relacionados.competencias {
+    width: 100%;
+    height: 420px;
+    max-width: 350px;
+    background: #FFFFFF;
+    box-shadow: 3px 3px 18px rgba(0, 0, 0, 0.04);
+    border-radius: 5px;
+}
+
+.container_ead_flex_competencias {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 60px 0px 20px 0px;
+}
+
+.container_ferramentas {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.container_ferramentas_int {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 1140px;
+    width: 100%;
+}
+
+.area_ferramentas {
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    background: #FFF;
+    box-shadow: 0px 15px 26px 0px rgba(0, 0, 0, 0.07);
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.title_ferramentas h2 {
+    color: #1E1E1E;
+    font-size: 18px;
+    font-family: Inter;
+    font-weight: var(--font-weight-700);
+    margin: 0px;
+}
+
+.area_doughnut_socioemocionais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 340px;
+}
+
+.graficos_inscricoes_socioemocionais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 5px 11px rgba(0, 0, 0, 0.071);
+    border-radius: 10px;
+    padding: 25px 20px;
+    width: 100%;
+    max-width: 585px;
+    height: 340px;
+}
+
+@media(max-width: 1024px) {
+
+    .container_ferramentas_int {
+        padding: 0px 20px;
+    }
+
+    .area_card_competencias .owl-theme .owl-nav {
+        width: 100%;
+    }
+    .area_card_competencias .owl-prev {
+        left: 15px;
+    }
+    .area_card_competencias .owl-next {
+        right: 15px;
+    }
+}
+
+@media(max-width: 480px) {
+    .container_ead_flex_competencias {
+        padding: 40px 0px 0px 0px;
+    }
+    .area_card_competencias .owl-prev {
+        left: 5px;
+    }
+    .area_card_competencias .owl-next {
+        right: 5px;
     }
 }
